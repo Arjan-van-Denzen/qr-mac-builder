@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: macos-app
-        path: dist/QR-code_mama
+        path: dist/QR-code_mama.app
