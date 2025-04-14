@@ -12,10 +12,10 @@ root = tk.Tk()
 root.withdraw()
 
 # Ask for URL
-url = simpledialog.askstring("Input", "Enter the URL to encode:")
+url = simpledialog.askstring("Input", "Hallo mama, typ hier je URL in:")
 
 if not url:
-    messagebox.showwarning("No URL", "No URL entered. Exiting.")
+    messagebox.showwarning("No URL", "Geen URL dus we stoppen.")
     exit()
 
 # Generate QR code
@@ -27,7 +27,7 @@ qr_img = qr.make_image(fill_color="black")
 
 # Save & show
 downloads_folder = os.path.expanduser("~/Downloads")
-output_path = os.path.join(downloads_folder, "qr_code.png")
+output_path = os.path.join(downloads_folder, "QR_code.png")
 qr_img.save(output_path)
 
-messagebox.showinfo("Done", f"QR code saved to:\n{output_path}")
+messagebox.showinfo("Klaar", f"QR-code opgeslagen in:\n{output_path}")
