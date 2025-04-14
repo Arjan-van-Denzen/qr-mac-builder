@@ -25,7 +25,7 @@ jobs:
 
     - name: Build app with PyInstaller
       run: |
-        pyinstaller --onefile --windowed abc.py
+        pyinstaller --onefile --windowed QR-code_mama.py
 
     - name: Upload built app
       uses: actions/upload-artifact@v3
